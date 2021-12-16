@@ -1,0 +1,335 @@
+@charset "UTF-8";
+* {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0; 
+ }
+
+h1 {
+  font-size: larger;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  margin-right: 2rem; }
+
+/*PROPIEDADES BARRA DE NAVEGACIÓN*/
+
+
+/* PROPIEDADES PÁGINA INDEX */
+
+
+.header__titulo {
+  background-color:#000000;
+  color: white;
+  text-align: center;
+  padding: 2em;
+  letter-spacing: 0.15em;
+  font-size: 25px; 
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+.main-div__carta {
+  background-color:rgb(134,0,0);
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 00.25em;
+  color: white;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 1.5em;
+}
+.table th {
+  color: rgb(134,0,0);
+}
+.table td {
+  color:#000000;
+  font-size: 1.05em;
+}
+
+.main-div__carta button {
+  background-color: transparent;
+  border: 2px solid white;
+  width: 13em;
+  height: 3em;
+  justify-content: center;
+  border-radius: 7px;
+  color: white;
+  align-items: center;
+  font-size: 14px;
+  margin:1em;
+}
+.main-div__carta button:hover {
+  background-color#000000;
+  color: white;
+  transform: scale(1.2);
+  border: 0px;
+}
+  
+
+.index_container1_boton {
+  align-items: center; }
+
+.index_container1_imagen {
+  width: 20%;
+  height: 100%;
+  border-radius: 2px; }
+
+#main-div__carta--titulosize {
+  font-size: 22px; }
+
+#index_texto {
+  padding: 2em;
+  border: solid 1px rgb(134,0,0);
+  margin-top: 3em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 3em;
+}
+
+.index_container3 p {
+  padding: 1rem;
+  color: white;
+  font-size: 14px;
+  line-height: 1.5em; 
+  }
+
+.index_container4 {
+  padding: 2rem;
+  text-align: center;
+  justify-content: center;
+  background-image: url(../imagenes/1119.jpg);
+  background-size: 100% 100%;
+  height: 15em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+ }
+.index_container4_novedad {
+  background-color: rgb(134,0,0);
+  width: 16em;
+  height: 2em;
+  text-align: center;
+  letter-spacing: 1.25em;
+  font-size: 16px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  animation-name: novedad;
+  animation-iteration-count: infinite;
+  animation-duration: 3s; }
+
+@keyframes novedad {
+  0% {
+    background-color: red; }
+  25% {
+    color: #FFFBBD; }
+  50% {
+    background-color: rgb(134,0,0);; }
+  100% {
+    color: black;
+    text-shadow: red; } }
+
+.index_container5 {
+  background-image: url(../imagenes/1202.jpg);
+  background-size: 100% 100%;
+  display: flex;
+  color: royalblue;
+  font-size: 18px;
+  justify-content: center;
+  align-items: flex-end;
+  height: 15em;
+}
+
+#menu {
+  color: white;
+  font-weight: bold;
+  padding-right: 0.5em;
+  background-color: rgb(134,0,0); }
+
+#diario {
+  color: #01295F;
+  font-weight: bold;
+  padding-right: 0.5em;
+  background-color: rgb(134,0,0);
+  ;
+  animation-name: diario_animacion;
+  animation-iteration-count: infinite;
+  animation-duration: 5s; }
+
+#euros {
+  color: #01295F;
+  font-weight: bold;
+  padding-right: 0.5em;
+  background-color: rgb(134,0,0);
+  ;
+  animation-name: euros_animacion;
+  animation-iteration-count: infinite;
+  animation-duration: 5s; }
+
+@keyframes diario_animacion {
+  0% {
+    color: rgb(134,0,0);
+    ; }
+  50% {
+    color: #01295F; }
+  100% {
+    color: rgb(134,0,0);
+    ; } }
+
+@keyframes euros_animacion {
+  0% {
+    color: #01295F; }
+  50% {
+    color: rgb(134,0,0);
+    ; }
+  100% {
+    color: #01295F; } }
+
+.index_container6 {
+  background-color: rgb(134,0,0);
+  ;
+  grid-column: 9/20;
+  grid-row: 16/20;
+  padding: 2rem;
+  text-align: justify;
+  transition: background-color 3s; }
+
+.index_container6:hover {
+  background: linear-gradient(90deg,#000000 0%, #fffbbd 35%, rgb(134,0,0);
+   100%); }
+
+.index_container2 p {
+  /*Propiedades texto en bloque carta de juegos*/
+  font-size: 16;
+  font-weight: bold;
+  margin-bottom: 1em; }
+
+a {
+  font-size: medium;
+  color: midnightblue;
+  text-decoration: none; }
+
+th {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  padding: 0.5rem;
+  border-style: solid;
+  border-color: white;
+  border-width: 0.5px; }
+
+td {
+  font-size: 10px;
+  color: white;
+  padding: 0.5rem;
+  border-style: solid;
+  border-color: white;
+  border-width: 0.5px; }
+
+.listas {
+  list-style-type: square;
+  text-align: left;
+  padding-left: 22px;
+  padding: 1rem; }
+
+/* PROPIEDADES PAGINA RESTAURANTES*/
+
+#restaurantes_desplegable {
+  margin-top:2em;
+  margin-bottom: 2em;
+  width: 100px;
+}
+#restaurantes_encontrarnos {
+  margin-top: 2em;
+}
+/* PROPIEDADES PÁGINA TAKEAWAY */
+
+
+.takeaway__container__titulo {
+  /*Propiedades del título de la página*/
+  text-align: left;
+  padding: 2em;
+  align-items: center;
+  letter-spacing: 0.15em;
+  font-size: 25px;
+  color:#000000;
+  font-weight: bold;
+ }
+#takeaway_botones{
+  background-color:#000000;
+  border#000000 1px solid;
+}
+
+#takewaway_conjuntobotones {
+justify-content: center;
+align-content: center;
+}
+
+
+/* PROPIEDADES PÁGINA EMPRESA */
+
+#empresa_carrusel {
+  margin-top: 2em;
+}
+.empresa_container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  margin: 1em;
+  padding: 2em; }
+  
+
+#empresa_formulario {
+  margin: 2em;
+}
+
+/* PROPIEDADES PÁGINA RESTAURANTES*/
+
+.card-title{
+  color: rgb(134,0,0);
+  ;
+  font-weight: bold;
+  letter-spacing: 0.25em; }
+
+/* PROPIEDADES FOOTER*/
+
+#footer {
+  border-top: rgb(134,0,0);
+   2px double;
+  margin-top: 4em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin-bottom:4em;
+  color:#000000;
+}
+#footer a{
+  color:#000000;
+  font-weight: bold;
+}
+#footer a:hover {
+  color: rgb(134,0,0);
+  ;
+  transform: scale(1.5); }
+
+/* PROPIEDADES PAGINA BEGEEK */
+
+#begeek_container {
+  padding: 4em;
+}
+#begeek_container h3 {
+  color: rgb(134,0,0);
+  ;
+  padding-bottom: 1em;
+}
+
+h3 {
+  font-size: 16px;
+  margin: 0.5em;
+  color: #01295F; }
+
+#geeks_cards {
+  padding: 3em;
+}
+#restaurantes_container {
+  padding-top: 2em;
+}

@@ -1,0 +1,565 @@
+*{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: larger; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 7rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+}
+
+/*PROPIEDADES BARRA DE NAVEGACIÓN*/
+.menunav { 
+    background-color: rgb(134,0,0);
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+}
+.menunav a {  /* Propiedades texto enlaces menú navegación */
+    color: white;
+    letter-spacing: 0.25em;
+}
+.menunav__logo {
+    width: 80px;
+}
+
+/* PROPIEDADES PÁGINA INDEX */
+.index_container {
+    height: 100vh;
+    margin-left: 0vh;
+    margin-top: 0vh;
+    background-color: #01295F;
+    display: grid;
+    grid-template-columns: repeat(20,5fr);
+    grid-template-rows: repeat(20,5fr);
+}
+.index_container_titulo {
+    background-color: #01295F;
+    color: white;
+    grid-column: 2/20;
+    grid-row:2/4;
+    text-align: center;
+    padding: 2em;
+    letter-spacing: 0.15em;
+    font-size: 25px;
+}
+.index_container1 { 
+    background-color:rgb(134,0,0);
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 00.25em;
+    color: white;
+    grid-column: 2/8;
+    grid-row: 2/9;
+    justify-content: space-around;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+.index_container1_boton { /* caja de botón*/
+    display: flex;
+    background-color: transparent;
+    border: 2px solid white;
+    width: 13em;
+    height: 3em;
+    justify-content: center;
+    border-radius:7px;
+    color: white;
+    align-items: center;
+    font-size: 14px;
+}
+.index_container1_boton:hover {
+    background-color: white;
+    color:rgb(134,0,0);
+    transform: scale(1.5);
+}
+.index_container1_boton {
+    align-items: center;
+}
+.index_container1_imagen {
+    width: 100%;
+    height: 100%;;
+    border-radius: 2px;
+
+}
+#index_container1_titulo {
+    font-size: 22px;
+}
+.index_container2 {  /* Propiedades sección carta de juegos en index*/
+    grid-column: 9/20;
+    grid-row:2/9;
+    color: white;
+    padding: 2rem;
+    border: aliceblue;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.index_container2_tabla {
+    padding: 2px;
+    margin: auto;
+
+}
+
+.index_container3 { 
+    background-color: #82A3A1;
+    grid-column: 2/8;
+    grid-row: 10/20;
+    padding: 3em;
+    text-align: left;
+}
+.index_container3 p {
+    padding: 1rem;
+    color: white;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+.index_container4 { 
+    background-color: #FFFBBD;
+    grid-column: 9/14;
+    grid-row: 10/15;
+    padding: 2rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-image: url(../imagenes/hamburguesa_novedad.jpg);
+    background-size: 100% 80%;
+}
+.index_container4_novedad {
+    background-color:rgb(134,0,0);
+    width: 16em;
+    height: 2em;
+    text-align: center;
+    letter-spacing: 1.25em;
+    font-size: 16px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    animation-name: novedad;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+@keyframes novedad{
+    0% {background-color: red}
+    25% {color: #FFFBBD;}
+    50% {background-color: rgb(134,0,0);
+    100% {color: black; text-shadow: red}
+}
+.index_container5 {
+    background-image: url(../imagenes/menu.png);
+    background-size: 100% 100%;
+    grid-column: 15/20;
+    grid-row: 10/15;
+    padding: 2rem;
+    display: flex;
+    color: royalblue;
+    font-size: 18px;
+    justify-content: center;
+    align-items: flex-end;
+}
+#menu {
+    color:white;
+    font-weight: bold;
+    padding-right: 0.5em;
+    background-color:rgb(134,0,0);
+}
+#diario {
+    color:#01295F;
+    font-weight: bold;
+    padding-right: 0.5em;
+    background-color: rgb(134,0,0);
+    animation-name: diario_animacion;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+#euros {
+    color:#01295F;
+    font-weight: bold;
+    padding-right: 0.5em;
+    background-color: rgb(134,0,0);
+    animation-name: euros_animacion;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+@keyframes diario_animacion{
+    0% {
+        color:rgb(134,0,0);
+    }
+    50% {
+        color:#01295F;
+    }
+    100% {
+        color:rgb(134,0,0);
+    }
+
+}
+@keyframes euros_animacion{
+    0% {
+        color:#01295F
+    }
+    50% {
+        color: rgb(134,0,0);
+    }
+    100% {
+        color:#01295F
+    }
+
+}
+.index_container6 {
+    background-color:rgb(134,0,0);
+    grid-column: 9/20;
+    grid-row: 16/20;
+    padding: 2rem;
+    text-align: justify;
+    transition: background-color 3s;
+
+}
+
+.index_container6:hover {
+    background: linear-gradient(90deg, rgba(130,163,161,1) 0%, rgba(255,251,189,1) 35%, rgba(240,120,9,1) 100%)
+}
+.index_container2 p { /*Propiedades texto en bloque carta de juegos*/
+    font-size: 16;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+a {
+    font-size: medium; color: midnightblue;
+    text-decoration: none;
+}
+th {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    padding: 0.5rem;
+    border-style: solid;
+    border-color: white;
+    border-width: 0.5px;
+}
+td {
+    font-size: 10px;
+    color: white;
+    padding: 0.5rem;
+    border-style: solid;
+    border-color: white;
+    border-width: 0.5px;
+}
+
+.listas {
+    list-style-type: square;
+    text-align: left;
+    padding-left: 22px;
+    padding: 1rem;
+}
+
+/* PROPIEDADES PÁGINA TAKEAWAY */
+
+.takeaway_container { /*Aplicamos grid a la página takeaway*/
+    background-color: #FFFBBD;
+    display: grid;
+    grid-template-columns: repeat(20,5fr);
+    justify-content: center;
+    grid-template-rows: repeat(20,5fr) ;
+}
+
+.takeaway_container1 {
+    grid-column: 2/7;
+    grid-row: 1/4;
+    background-image: url(../imagenes/duque_garcia_furgoneta2.png);
+    background-size: 100% 100%;
+}
+.takeaway__container__titulo { /*Propiedades del título de la página*/
+    text-align: left;
+    align-items: center;
+    letter-spacing: 0.15em;
+    font-size: 25px;
+    grid-column: 8/20;
+    grid-row: 2/4;
+    color:rgb(134,0,0);
+}
+.takeaway__container__producto1 { /* Para cada producto definimos tamaño caja foto y caja texto*/
+    padding: 2em; 
+    text-align: center;
+    font-size: 16px;
+    grid-column: 2/7;
+    grid-row: 5/10;
+    background-image: url("../imagenes/comida1.jpg") ;
+    background-size: 100% 100%;
+    color: azure;
+}
+.takeaway__container__textoproducto1 {
+    padding: 1em;
+    text-align: left;
+    font-size: 14px;
+    grid-column: 2/7;
+    grid-row: 10/11; 
+    background-color:rgb(134,0,0);
+}
+.takeaway__container__producto2 {
+    padding: 2em;
+    text-align: center;
+    font-size: 16px;
+    grid-column: 8/14;
+    grid-row: 5/10;
+    background-image: url("../imagenes/comida2.jpg");
+    background-size: 100% 100%;
+}
+.takeaway__container__textoproducto2 {
+    padding: 1em;
+    text-align: left;
+    font-size: 14px;
+    grid-column: 8/14;
+    grid-row: 10/11; 
+    background-color:rgb(134,0,0);
+}
+.takeaway__container__producto3 {
+    background-color:#82A3A1;
+    padding: 2em;
+    text-align: center;
+    font-size: 16px;
+    grid-column: 15/20;
+    grid-row: 5/17;
+    background-image: url("../imagenes/comida3.jpg");
+    background-size: 250% 100%;
+}
+.takeaway__container__textoproducto3 {
+    padding: 1em;
+    text-align: left;
+    font-size: 14px;
+    grid-column: 15/20;
+    grid-row: 17/18; 
+    background-color:rgb(134,0,0);
+}
+.takeaway__container__producto4 {
+    background-color:#82A3A1;
+    padding: 2em;
+    text-align: center;
+    font-size: 16px;
+    grid-column: 2/7;
+    grid-row: 12/17;
+    background-image: url("../imagenes/comida4.jpg");
+    background-size: 120% 100%;
+}
+.takeaway__container__textoproducto4 {
+    padding: 1em;
+    text-align: left;
+    font-size: 14px;
+    grid-column: 2/7;
+    grid-row: 17/18; 
+    background-color:rgb(134,0,0);
+}
+
+.takeaway__container__producto5 {
+    background-color:#82A3A1;
+    padding: 2em;
+    text-align: center;
+    font-size: 16px;
+    grid-column: 8/14;
+    grid-row: 12/17;
+    background-image: url("../imagenes/comida5.jpg");
+    background-size: 100% 100%;
+}
+.takeaway__container__textoproducto5 {
+    padding: 1em;
+    text-align: left;
+    font-size: 14px;
+    grid-column: 8/14;
+    grid-row: 17/18; 
+    background-color:rgb(134,0,0);
+}
+.takeaway__container__botones {
+    border: solid 1px black;
+    background-color:#82A3A1;
+    padding: 2em;
+    text-align: center;
+    font-size: 16px;
+    grid-column: 7/15;
+    grid-row: 19/20;
+}
+
+/* PROPIEDADES PÁGINA EMPRESA */
+
+.empresa_container {
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(9,1fr);
+    margin: 1em;
+}
+.empresa_container1 {
+    background: #FFFBBD;
+    text-align: justify;
+    line-height: 1.5em ;
+    grid-column: 1/5;
+    grid-row: 1/6;
+    margin: 1em;
+    padding: 2em;
+}
+.empresa_container2 {
+    grid-column: 5/9;
+    grid-row: 1/4;
+    margin: 0.5em;
+    color: #01295F;
+    font-size: 60px;
+    justify-self: start;
+    align-self: end;
+    letter-spacing: 0.15em;
+}
+.empresa_container3 {
+    grid-column: 5/9;
+    grid-row: 4/10;
+    background-color: #82A3A1;
+    margin: 1em;
+
+}
+.empresa_container4 {
+    grid-column: 1/5;
+    grid-row: 6/10;
+    background-color: rgb(134,0,0);
+    margin: 1em;
+    padding: 1em;
+    display: flexbox;
+}
+
+/* PROPIEDADES PÁGINA RESTAURANTES*/
+
+.restaurantes_container {
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+    justify-content: center;
+    background-color: #FFFBBD;
+}
+.restaurantes_container1 {
+    grid-column: 1/5;
+    grid-row: 1/7;
+    background-size:100% 100%;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 0.5%;
+}
+.restaurantes_container2 {
+    grid-column: 5/9;
+    grid-row: 1/5;
+    margin-top: 1em;
+    margin-right: 1em;
+    margin-left: 0.5%;
+}
+.restaurantes_container3 {
+    grid-column: 6/8;
+    grid-row: 6/7;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    align-self: start;
+}
+.restaurantes_container4 {
+    grid-column: 6/8;
+    grid-row: 5/6;
+    font-size: 18px;
+    justify-self: center;
+    align-self: center;
+}
+#restaurantes_container3_select {
+    width: 100%;
+    height: 2em;
+}
+.restaurantes_container5 {
+    grid-column: 1/3;
+    grid-row: 7/9;
+    align-self: start;
+    justify-self: center;
+    padding-top: 3em;
+}
+.restaurantes_container6 {
+    grid-column: 3/5;
+    grid-row: 7/9;
+    align-self: start;
+    justify-self: center;
+    padding-top: 3em;
+}
+.restaurantes_container7 {
+    grid-column: 5/7;
+    grid-row: 7/9;
+    align-self: start;
+    justify-self: center;
+    padding-top: 3em;
+}
+.restaurantes_container8 {
+    grid-column: 7/9;
+    grid-row: 7/9;
+    align-self: start;
+    justify-self: center;
+    padding-top: 3em;
+}
+#restaurantes_nombreRestaurante {
+    color: rgb(134,0,0);
+    font-weight: bold;
+    letter-spacing: 0.25em;   
+}
+
+/* PROPIEDADES PAGINA BEGEEK */ 
+.begeek_container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    column-gap: 1em;
+    row-gap: 2em;
+    justify-content: center;
+}
+.begeek_container1 {
+    grid-column:1/2 ;
+    grid-row: 1/2;
+}
+.begeek_container2 {
+    grid-column:2/3 ;
+    grid-row: 1/2;
+}
+.begeek_container3 {
+    grid-column:3/4 ;
+    grid-row: 1/2;
+}
+.begeek_container4 {
+    grid-column:1/2 ;
+    grid-row: 2/3;
+}
+.begeek_container5 {
+    grid-column:2/3 ;
+    grid-row: 2/3;
+}
+.begeek_container6 {
+    grid-column:3/4 ;
+    grid-row: 2/3;
+}
+.begeek_container7 {
+    grid-column:1/2 ;
+    grid-row: 3/4;
+}
+.begeek_container8 {
+    grid-column:2/3 ;
+    grid-row: 3/4;
+}
+.begeek_container9{
+    grid-column:3/4 ;
+    grid-row: 3/4;
+}
+h3 {
+    font-size: 16px;
+    margin: 0.5em;
+    color: #01295F;
+}
+
